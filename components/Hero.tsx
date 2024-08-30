@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Link from "next/link"; // Import Link from Next.js
+import { FaGithub, FaLinkedin, FaArrowDown } from "react-icons/fa";
 import heroImg from "../public/360_F_601171827_GwbDHEuhisbGFXRfIpXFhtf7wAvsbLut-removebg-preview.png";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import htmlIcon from "../public/html5-emblem-orange-shield-and-white-text-vector.jpg";
@@ -18,86 +19,37 @@ import nextLogo from "../public/329ad85f4ab2047cae13d582274f9270.jpg";
 
 const Hero = () => {
   const skills = [
-    {
-      id: 1,
-      name: "HTML5",
-      image: htmlIcon,
-    },
-    {
-      id: 2,
-      name: "CSS3",
-      image: cssIcon,
-    },
-    {
-      id: 3,
-      name: "JavaScript",
-      image: jsIcon,
-    },
-    {
-      id: 4,
-      name: "Node.js",
-      image: nodeIcon,
-    },
-    {
-      id: 5,
-      name: "React",
-      image: reactIcon,
-    },
-    {
-      id: 6,
-      name: "Next.js",
-      image: nextLogo,
-    },
-    {
-      id: 7,
-      name: "Angular",
-      image: angularIcon,
-    },
-    {
-      id: 8,
-      name: "MongoDB",
-      image: mongoLogo,
-    },
-    {
-      id: 9,
-      name: "SQL",
-      image: sqlLogo,
-    },
-    {
-      id: 10,
-      name: "C#",
-      image: cLogo,
-    },
-    {
-      id: 11,
-      name: "Java",
-      image: javaLogo,
-    },
-    {
-      id: 12,
-      name: "WordPress",
-      image: wordpressLogo,
-    },
+    { id: 1, name: "HTML5", image: htmlIcon },
+    { id: 2, name: "CSS3", image: cssIcon },
+    { id: 3, name: "JavaScript", image: jsIcon },
+    { id: 4, name: "Node.js", image: nodeIcon },
+    { id: 5, name: "React", image: reactIcon },
+    { id: 6, name: "Next.js", image: nextLogo },
+    { id: 7, name: "Angular", image: angularIcon },
+    { id: 8, name: "MongoDB", image: mongoLogo },
+    { id: 9, name: "SQL", image: sqlLogo },
+    { id: 10, name: "C#", image: cLogo },
+    { id: 11, name: "Java", image: javaLogo },
+    { id: 12, name: "WordPress", image: wordpressLogo },
   ];
 
   return (
     <div className="relative h-screen">
-      <div className="pt-10 flex items-center justify-between px-6">
+      <div className="pt-8 flex items-center justify-between px-6">
         <h1 className="text-5xl">
           Nikos Bos<span className="text-lightBlue">.</span>
         </h1>
         <div className="flex gap-6">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/nikosoo"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub Profile"
           >
             <FaGithub className="text-2xl text-gray-400 hover:text-lightBlue transition-colors" />
           </a>
-
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/nikos-bosneas-426353275/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
@@ -106,7 +58,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="pt-36 flex items-center justify-center">
+      <div className="pt-20 flex items-center justify-center">
         <div className="relative p-12 bg-[#021526] text-center w-full h-[35rem] rounded-xl shadow-lg border-2 border-lightBlue">
           <div className="flex flex-col text-left z-10">
             <h2 className="text-5xl font-semibold text-white">Hello I'm</h2>
@@ -118,11 +70,14 @@ const Hero = () => {
               dynamic and responsive web applications from front-end to
               back-end. I love turning ideas into reality through code.
             </p>
-            <p>My skills</p>
-            <div className="flex flex-row items-center justify-center mb-10 w-full">
-              <AnimatedTooltip items={skills} />
+            <h3 className="mt-20 text-xl text-lightBlue">My skills</h3>
+            <div className="grid grid-cols-2 gap-4 items-center pt-4">
+              <div className="flex flex-wrap items-center justify-start">
+                <AnimatedTooltip items={skills} />
+              </div>
             </div>
           </div>
+
           {/* Red Circle Behind the Image */}
           <div className="absolute right-16 top-1/2 transform -translate-y-1/2 w-64 h-64 bg-gray-700 rounded-full border-2 border-lightBlue z-0"></div>
 
@@ -131,23 +86,37 @@ const Hero = () => {
             alt="hero"
             className="absolute right-8 top-1/2 transform -translate-y-1/2 w-80 h-80 object-cover z-10"
           />
-          <div className="pt-4 absolute bottom-20 left-12">
-            <div className="relative flex items-center justify-center w-28 h-28">
-              <motion.div
-                className="absolute border-2 border-dashed border-white rounded-full w-full h-full"
-                animate={{ rotate: 360 }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  repeatType: "loop",
-                }}
-              />
-              <div className="text-lg flex items-center justify-center w-full h-full text-lightBlue">
-                Projects
-              </div>
-            </div>
-          </div>
         </div>
+      </div>
+      <div className="flex flex-wrap items-center justify-center mt-12">
+        <Link href="#projects">
+          <div className="relative flex flex-col items-center justify-center w-28 h-28 cursor-pointer">
+            <motion.div
+              className="absolute border-2 border-dashed border-white rounded-full w-full h-full flex items-center justify-center"
+              animate={{ rotate: 360 }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+            />
+            <div className="text-lg flex items-center justify-center w-full h-1/3 text-lightBlue">
+              Projects
+            </div>
+            {/* Animated Down Arrow Icon */}
+            <motion.div
+              animate={{ y: [0, 10, 0] }}
+              transition={{
+                duration: 1,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              className="mt-2"
+            >
+              <FaArrowDown className="text-2xl text-lightBlue" />
+            </motion.div>
+          </div>
+        </Link>
       </div>
     </div>
   );

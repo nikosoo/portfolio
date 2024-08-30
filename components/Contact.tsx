@@ -32,7 +32,7 @@ const Contact = () => {
             Connect with me on social media
           </h1>
           <a
-            href="https://www.linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/nikos-bosneas-426353275/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-3 text-blue-400 hover:text-blue-300 transition-colors duration-300"
@@ -42,7 +42,7 @@ const Contact = () => {
             <span>LinkedIn</span>
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/nikosoo"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-3 text-gray-400 hover:text-gray-300 transition-colors duration-300"
@@ -61,7 +61,7 @@ const Contact = () => {
             <p>&copy; 2024 Nikos Bos. All rights reserved.</p>
             <div className="flex space-x-6">
               <a
-                href="https://www.linkedin.com/in/your-profile"
+                href="https://www.linkedin.com/in/nikos-bosneas-426353275/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn Profile"
@@ -70,7 +70,7 @@ const Contact = () => {
                 <FaLinkedin className="text-2xl" />
               </a>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/nikosoo"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub Profile"
