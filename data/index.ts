@@ -1,27 +1,31 @@
-import img from "../public/360_F_294637633_4eBaHE24EgCSo75m6PuEe5aMFBA5Pe2J-removebg-preview.png";
+import Taste from "../public/TasteHaven.png";
+import Connectify from "../public/Connectify.png";
+import WPproj1 from "../public/WPproj1.png";
+import WPproj2 from "../public/WPproj2.png";
+
 export const projects = [
   {
-    title: "first",
-    description: "asdds",
+    title: "Taste Haven",
+    description: "MERN",
     id: 1,
-    img: img,
+    img: Taste,
   },
   {
-    title: "first",
-    description: "asdds",
+    title: "Connectify",
+    description: "MERN",
     id: 2,
-    img: img,
+    img: Connectify,
   },
   {
-    title: "first",
-    description: "asdds",
+    title: "John Spiridis photography",
+    description: "WordPress",
     id: 3,
-    img: img,
+    img: WPproj1,
   },
   {
-    title: "first",
-    description: "asdds",
+    title: "Champions Choice",
+    description: "WordPress",
     id: 4,
-    img: img,
+    img: WPproj2,
   },
 ];
