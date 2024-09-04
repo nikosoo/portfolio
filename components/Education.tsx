@@ -6,7 +6,7 @@ const Education = () => {
   return (
     <div className="h-screen py-10 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
       {/* Row 1 */}
-      <WobbleCard containerClassName="col-span-1 lg:col-span-2 h-full bg-blue-600 min-h-[300px]">
+      <WobbleCard containerClassName="col-span-1 lg:col-span-2 h-full bg-[#A0153E] min-h-[300px]">
         <div>
           <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             Web Developer
@@ -32,7 +32,7 @@ const Education = () => {
         </div>
       </WobbleCard>
 
-      <WobbleCard containerClassName="col-span-1 min-h-[300px]">
+      <WobbleCard containerClassName="col-span-1 bg-[#6C48C5] min-h-[300px]">
         <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
           Informatics and Applications
         </h2>
@@ -48,7 +48,7 @@ const Education = () => {
       </WobbleCard>
 
       {/* Row 2 */}
-      <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-red-900 min-h-[300px]">
+      <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-[#1230AE]  min-h-[300px]">
         <div>
           <h2 className="max-w-sm md:max-w-lg text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             IBM Full Stack Software Developer Professional Certificate
@@ -78,7 +78,7 @@ const Education = () => {
         />
       </WobbleCard>
 
-      <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-green-700">
+      <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-[#3795BD]">
         <div>
           <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             Foundational C# with Microsoft
@@ -88,9 +88,8 @@ const Education = () => {
             Completed a comprehensive C# programming course, mastering core
             concepts, syntax, and practical application in software development.
             Gained proficiency in variables, data types, control structures, and
-            object-oriented programming through hands-on exercises and projects,
-            enabling confident development and implementation of C#
-            applications.
+            object-oriented programming through hands-on projects, enabling
+            confident development and implementation of C# applications.
           </p>
         </div>
       </WobbleCard>
