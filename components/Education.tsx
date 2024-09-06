@@ -34,16 +34,14 @@ const Education = () => {
 
       <WobbleCard containerClassName="col-span-1 bg-[#6C48C5] min-h-[300px]">
         <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-          Informatics and Applications
+          M.Sc. Informatics and Applications(In Progress)
         </h2>
         <p className="text-xl">University of West Attica</p>
         <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
-          Informatics and Applications cover essential technology topics,
-          including coding and software development, database design and
-          management, digital circuits and hardware fundamentals, and network
-          architecture. Advanced subjects include object-oriented programming,
-          computer system architecture, operating system principles, and
-          information security.
+          Informatics and Applications covers key tech topics like coding,
+          software development, database design, digital circuits, and network
+          architecture. Advanced areas include object-oriented programming,
+          system architecture, operating systems, and information security.
         </p>
       </WobbleCard>
 

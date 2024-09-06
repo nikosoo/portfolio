@@ -6,13 +6,13 @@ const Contact = () => {
   return (
     <div className="relative h-screen bg-[#021526] flex flex-col items-center justify-center">
       {/* Title in the top left corner */}
-      <div className="absolute top-4 left-8 p-20">
+      <div className="absolute top-4 left-28 p-20">
         <LottieAnimation />
       </div>
 
       <div className="grid grid-cols-2 gap-8 h-[40vh] w-[60vw]">
         {/* Left Column - Contact Me */}
-        <div className="flex flex-col items-start justify-center pl-8  space-y-10">
+        <div className="flex flex-col items-start justify-center pl-8 space-y-10">
           <h1 className="text-3xl font-semibold text-gray-100">Contact Me</h1>
           <a
             href="mailto:nikosbosoo@hotmail.com"
