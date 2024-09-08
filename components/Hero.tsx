@@ -16,6 +16,7 @@ import cLogo from "../public/C-logo.jpg";
 import javaLogo from "../public/731_java.jpg";
 import wordpressLogo from "../public/wordpress-logo-wordpress-icon-transparent-png-free-vector.jpg";
 import nextLogo from "../public/329ad85f4ab2047cae13d582274f9270.jpg";
+import Image from "next/image";
 
 const Hero = () => {
   const skills = [
@@ -61,7 +62,9 @@ const Hero = () => {
       <div className="pt-20 flex items-center justify-center">
         <div className="relative p-12 bg-[#021526] text-center w-full h-[35rem] rounded-xl shadow-lg border-2 border-lightBlue">
           <div className="flex flex-col text-left z-10">
-            <h2 className="text-5xl font-semibold text-white">Hello I'm</h2>
+            <h2 className="text-5xl font-semibold text-white">
+              Hello Hello I&apos;m{" "}
+            </h2>
             <h2 className="text-5xl font-semibold text-white">
               <span className="text-lightBlue">Nikos Bosneas</span>
             </h2>
@@ -81,8 +84,8 @@ const Hero = () => {
           {/* Red Circle Behind the Image */}
           <div className="absolute right-16 top-1/2 transform -translate-y-1/2 w-64 h-64 bg-gray-700 rounded-full border-2 border-lightBlue z-0"></div>
 
-          <img
-            src={heroImg.src}
+          <Image
+            src={heroImg}
             alt="hero"
             className="absolute right-8 top-1/2 transform -translate-y-1/2 w-80 h-80 object-cover z-10"
           />
