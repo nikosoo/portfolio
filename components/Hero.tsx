@@ -69,8 +69,8 @@ const Hero = () => {
               <span className="text-lightBlue">Nikos Bosneas</span>
             </h2>
             <p className="mt-8 text-lg text-gray-300 w-[60%]">
-              I'm a passionate Full Stack Developer with expertise in building
-              dynamic and responsive web applications from front-end to
+              I&apos;m a passionate Full Stack Developer with expertise in
+              building dynamic and responsive web applications from front-end to
               back-end. I love turning ideas into reality through code.
             </p>
             <h3 className="mt-20 text-xl text-lightBlue">My skills</h3>
