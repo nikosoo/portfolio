@@ -38,10 +38,11 @@ const Education = () => {
         </h2>
         <p className="text-xl">University of West Attica</p>
         <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
-          Informatics and Applications covers key tech topics like coding,
-          software development, database design, digital circuits, and network
-          architecture. Advanced areas include object-oriented programming,
-          system architecture, operating systems, and information security.
+          Informatics and Applications covers essential tech topics such as
+          coding, software development, database design, digital circuits, and
+          network architecture. Advanced areas include object-oriented
+          programming, system architecture, operating systems, and information
+          security.
         </p>
       </WobbleCard>
 
