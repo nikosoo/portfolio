@@ -52,18 +52,11 @@ const ProjectCards = () => {
                   <CardItem
                     translateZ={20}
                     as={Link}
-                    href="https://twitter.com/mannupaaji"
+                    href={project.url}
                     target="__blank"
                     className="px-2 py-1 rounded-lg text-xs font-normal dark:text-white"
                   >
                     Try now →
-                  </CardItem>
-                  <CardItem
-                    translateZ={20}
-                    as="button"
-                    className="px-2 py-1 rounded-lg bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-                  >
-                    Sign up
                   </CardItem>
                 </div>
               </CardBody>
