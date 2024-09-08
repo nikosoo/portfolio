@@ -20,18 +20,18 @@ import Image from "next/image";
 
 const Hero = () => {
   const skills = [
-    { id: 1, name: "HTML5", image: htmlIcon },
-    { id: 2, name: "CSS3", image: cssIcon },
-    { id: 3, name: "JavaScript", image: jsIcon },
-    { id: 4, name: "Node.js", image: nodeIcon },
-    { id: 5, name: "React", image: reactIcon },
-    { id: 6, name: "Next.js", image: nextLogo },
-    { id: 7, name: "Angular", image: angularIcon },
-    { id: 8, name: "MongoDB", image: mongoLogo },
-    { id: 9, name: "SQL", image: sqlLogo },
-    { id: 10, name: "C#", image: cLogo },
-    { id: 11, name: "Java", image: javaLogo },
-    { id: 12, name: "WordPress", image: wordpressLogo },
+    { id: 1, name: "HTML5", image: htmlIcon.src, designation: "Frontend" },
+    { id: 2, name: "CSS3", image: cssIcon.src, designation: "Frontend" },
+    { id: 3, name: "JavaScript", image: jsIcon.src, designation: "Frontend" },
+    { id: 4, name: "Node.js", image: nodeIcon.src, designation: "Backend" },
+    { id: 5, name: "React", image: reactIcon.src, designation: "Frontend" },
+    { id: 6, name: "Next.js", image: nextLogo.src, designation: "Frontend" },
+    { id: 7, name: "Angular", image: angularIcon.src, designation: "Frontend" },
+    { id: 8, name: "MongoDB", image: mongoLogo.src, designation: "Database" },
+    { id: 9, name: "SQL", image: sqlLogo.src, designation: "Database" },
+    { id: 10, name: "C#", image: cLogo.src, designation: "Backend" },
+    { id: 11, name: "Java", image: javaLogo.src, designation: "Backend" },
+    { id: 12, name: "WordPress", image: wordpressLogo.src, designation: "CMS" },
   ];
 
   return (
