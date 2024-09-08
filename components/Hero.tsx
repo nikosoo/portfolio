@@ -20,18 +20,18 @@ import Image from "next/image";
 
 const Hero = () => {
   const skills = [
-    { id: 1, name: "HTML5", image: htmlIcon.src, designation: "Frontend" },
-    { id: 2, name: "CSS3", image: cssIcon.src, designation: "Frontend" },
-    { id: 3, name: "JavaScript", image: jsIcon.src, designation: "Frontend" },
-    { id: 4, name: "Node.js", image: nodeIcon.src, designation: "Backend" },
-    { id: 5, name: "React", image: reactIcon.src, designation: "Frontend" },
-    { id: 6, name: "Next.js", image: nextLogo.src, designation: "Frontend" },
-    { id: 7, name: "Angular", image: angularIcon.src, designation: "Frontend" },
-    { id: 8, name: "MongoDB", image: mongoLogo.src, designation: "Database" },
-    { id: 9, name: "SQL", image: sqlLogo.src, designation: "Database" },
-    { id: 10, name: "C#", image: cLogo.src, designation: "Backend" },
-    { id: 11, name: "Java", image: javaLogo.src, designation: "Backend" },
-    { id: 12, name: "WordPress", image: wordpressLogo.src, designation: "CMS" },
+    { id: 1, name: "HTML5", image: htmlIcon.src },
+    { id: 2, name: "CSS3", image: cssIcon.src },
+    { id: 3, name: "JavaScript", image: jsIcon.src },
+    { id: 4, name: "Node.js", image: nodeIcon.src },
+    { id: 5, name: "React", image: reactIcon.src },
+    { id: 6, name: "Next.js", image: nextLogo.src },
+    { id: 7, name: "Angular", image: angularIcon.src },
+    { id: 8, name: "MongoDB", image: mongoLogo.src },
+    { id: 9, name: "SQL", image: sqlLogo.src },
+    { id: 10, name: "C#", image: cLogo.src },
+    { id: 11, name: "Java", image: javaLogo.src },
+    { id: 12, name: "WordPress", image: wordpressLogo.src },
   ];
 
   return (
@@ -63,7 +63,7 @@ const Hero = () => {
         <div className="relative p-12 bg-[#021526] text-center w-full h-[35rem] rounded-xl shadow-lg border-2 border-lightBlue">
           <div className="flex flex-col text-left z-10">
             <h2 className="text-5xl font-semibold text-white">
-              Hello Hello I&apos;m{" "}
+              Hello I&apos;m{" "}
             </h2>
             <h2 className="text-5xl font-semibold text-white">
               <span className="text-lightBlue">Nikos Bosneas</span>
