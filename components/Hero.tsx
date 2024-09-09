@@ -73,7 +73,17 @@ const Hero = () => {
               building dynamic and responsive web applications from front-end to
               back-end. I love turning ideas into reality through code.
             </p>
-            <h3 className="mt-20 text-xl text-lightBlue">My skills</h3>
+
+            {/* Download CV Button */}
+            <div className="mt-6">
+              <Link href="/NikosBosneasCV.pdf" download>
+                <button className="px-6 py-3 bg-lightBlue text-white rounded-lg hover:bg-blue-600 transition-colors">
+                  Download CV
+                </button>
+              </Link>
+            </div>
+
+            <h3 className="mt-12 text-xl text-lightBlue">My skills</h3>
             <div className="grid grid-cols-2 gap-4 items-center pt-4">
               <div className="flex flex-wrap items-center justify-start">
                 <AnimatedTooltip items={skills} />
@@ -91,6 +101,7 @@ const Hero = () => {
           />
         </div>
       </div>
+
       <div className="flex flex-wrap items-center justify-center mt-12">
         <Link href="#projects">
           <div className="relative flex flex-col items-center justify-center w-28 h-28 cursor-pointer">
