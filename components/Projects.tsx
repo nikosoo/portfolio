@@ -7,9 +7,9 @@ import { projects } from "@/data";
 
 const ProjectCards = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-start lg:items-center gap-12 lg:gap-16 p-6 lg:p-12">
+    <div className="flex flex-col lg:flex-row justify-center items-start lg:items-center gap-12 lg:gap-16 p-6 lg:p-12 min-h-screen">
       {/* Left section with text */}
-      <div className="lg:w-2/4 w-full text-center lg:text-left">
+      <div className="lg:w-2/4 w-full text-center lg:text-left flex-grow">
         <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl pb-6 lg:pb-8">
           My work<span className="text-lightBlue">.</span>
         </div>
@@ -23,7 +23,7 @@ const ProjectCards = () => {
       </div>
 
       {/* Right section with project cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8 w-full lg:w-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8 w-full lg:w-auto flex-grow">
         {projects.map((project, index) => (
           <CardContainer key={index} className="inter-var">
             <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-4 border">

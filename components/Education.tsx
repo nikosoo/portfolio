@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Education = () => {
   return (
-    <div className="py-10 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full min-h-[80vh]">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full min-h-screen">
       {/* Row 1 */}
       <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-[#A0153E] min-h-[300px]">
         <div>
@@ -15,7 +15,7 @@ const Education = () => {
             National and Kapodistrian University of Athens
           </p>
           <p className="mt-4 text-left text-base/6 text-neutral-200">
-            I I have completed a comprehensive series of courses that have
+            I have completed a comprehensive series of courses that have
             equipped me with essential skills in web development and graphic
             design. I learned to create responsive web pages using HTML5 and
             CSS, and gained proficiency in JavaScript for enhancing
