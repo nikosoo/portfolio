@@ -96,13 +96,12 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Red Circle Behind the Image */}
-          <div className="absolute right-10 sm:right-[8%] md:right-8 lg:right-10 xl:right-[4rem] top-[49%] transform -translate-y-1/2 w-24 sm:w-28 md:w-32 lg:w-40 xl:w-56 h-24 sm:h-28 md:h-32 lg:h-40 xl:h-56 bg-gray-700 rounded-full border-2 border-lightBlue z-0"></div>
+          <div className="absolute right-10 sm:right-[8%] md:right-8 lg:right-[4rem] xl:right-[4rem] top-[49%] sm:top-[55%] max-sm:top-[55%] transform -translate-y-1/2 w-24 sm:w-28 md:w-32 lg:w-48 xl:w-56 h-24 sm:h-28 md:h-32 lg:h-48 xl:h-56 bg-gray-700 rounded-full border-2 border-lightBlue z-0" />
 
           <Image
             src={heroImg}
             alt="hero"
-            className="absolute right-6 md:right-4 lg:right-6 xl:right-8 top-1/2 transform -translate-y-1/2 w-32 sm:w-40 md:w-46 lg:w-48 xl:w-72 h-32 sm:h-40 md:h-46 lg:h-48 xl:h-72 object-cover z-10"
+            className="absolute right-6 md:right-4 lg:right-20 xl:right-8 top-1/2 sm:top-[55%] max-sm:top-[55%] transform -translate-y-1/2 w-32 sm:w-40 md:w-46 lg:w-58 xl:w-72 h-32 sm:h-40 md:h-46 lg:h-60 xl:h-72 object-cover z-10"
           />
         </div>
       </div>
@@ -110,7 +109,7 @@ const Hero = () => {
       {/* Projects Section Link */}
       <div className="flex flex-wrap items-center justify-center mt-6 md:mt-8 lg:mt-12 xl:mt-16">
         <Link href="#projects">
-          <div className="relative flex flex-col items-center justify-center w-16 max-sm:w-28 sm:w-28 md:w-28 lg:w-28 xl:w-28 h-16 max-sm:h-28 sm:h-28 md:h-28 lg:h-28 xl:h-28 cursor-pointer">
+          <div className="relative flex flex-col items-center justify-center w-16 max-sm:w-28 sm:w-28 md:w-28 lg:w-28 xl:w-32 h-16 max-sm:h-28 sm:h-28 md:h-28 lg:h-28 xl:h-32 cursor-pointer">
             <motion.div
               className="absolute border-2 border-dashed border-white rounded-full w-full h-full flex items-center justify-center"
               animate={{ rotate: 360 }}
