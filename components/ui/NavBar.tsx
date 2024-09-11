@@ -8,7 +8,7 @@ import {
 
 export default function Sidebar() {
   return (
-    <div className="w-18 h-[35%] bg-gray-800 text-white flex flex-col fixed right-4 top-1/2 transform -translate-y-1/2 shadow-lg rounded-full z-50 bg-opacity-75">
+    <div className="w-18 h-[35%] bg-gray-800 text-white flex flex-col fixed right-4 top-1/2 transform -translate-y-1/2 shadow-lg rounded-full z-50 bg-opacity-75 max-sm:hidden">
       <nav className="flex-1 flex flex-col items-center justify-center">
         <ul className="space-y-4">
           <li className="p-4 hover:bg-gray-700 flex items-center justify-center">

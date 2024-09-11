@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const Education = () => {
   return (
-    <div className="h-screen py-10 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+    <div className="py-10 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full min-h-[80vh]">
       {/* Row 1 */}
-      <WobbleCard containerClassName="col-span-1 lg:col-span-2 h-full bg-[#A0153E] min-h-[300px]">
+      <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-[#A0153E] min-h-[300px]">
         <div>
           <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             Web Developer
@@ -15,7 +15,7 @@ const Education = () => {
             National and Kapodistrian University of Athens
           </p>
           <p className="mt-4 text-left text-base/6 text-neutral-200">
-            I have completed a comprehensive series of courses that have
+            I I have completed a comprehensive series of courses that have
             equipped me with essential skills in web development and graphic
             design. I learned to create responsive web pages using HTML5 and
             CSS, and gained proficiency in JavaScript for enhancing
@@ -34,7 +34,7 @@ const Education = () => {
 
       <WobbleCard containerClassName="col-span-1 bg-[#6C48C5] min-h-[300px]">
         <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-          M.Sc. Informatics and Applications(In Progress)
+          M.Sc. Informatics and Applications (In Progress)
         </h2>
         <p className="text-xl">University of West Attica</p>
         <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
@@ -46,7 +46,7 @@ const Education = () => {
       </WobbleCard>
 
       {/* Row 2 */}
-      <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-[#1230AE]  min-h-[300px]">
+      <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-[#1230AE] min-h-[300px] relative">
         <div>
           <h2 className="max-w-sm md:max-w-lg text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             IBM Full Stack Software Developer Professional Certificate

@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Link from "next/link"; // Import Link from Next.js
+import Link from "next/link";
 import { FaGithub, FaLinkedin, FaArrowDown } from "react-icons/fa";
 import heroImg from "../public/360_F_601171827_GwbDHEuhisbGFXRfIpXFhtf7wAvsbLut-removebg-preview.png";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
@@ -35,19 +35,20 @@ const Hero = () => {
   ];
 
   return (
-    <div className="relative h-screen">
-      <div className="pt-8 flex items-center justify-between px-6">
-        <h1 className="text-5xl">
+    <div className="relative h-screen overflow-hidden">
+      {/* Header */}
+      <div className="pt-8 flex items-center justify-between">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
           Nikos Bos<span className="text-lightBlue">.</span>
         </h1>
-        <div className="flex gap-6">
+        <div className="flex gap-4 md:gap-5 lg:gap-6 xl:gap-8">
           <a
             href="https://github.com/nikosoo"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub Profile"
           >
-            <FaGithub className="text-2xl text-gray-400 hover:text-lightBlue transition-colors" />
+            <FaGithub className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-400 hover:text-lightBlue transition-colors" />
           </a>
           <a
             href="https://www.linkedin.com/in/nikos-bosneas-426353275/"
@@ -55,56 +56,61 @@ const Hero = () => {
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
           >
-            <FaLinkedin className="text-2xl text-gray-400 hover:text-lightBlue transition-colors" />
+            <FaLinkedin className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-400 hover:text-lightBlue transition-colors" />
           </a>
         </div>
       </div>
-      <div className="pt-20 flex items-center justify-center">
-        <div className="relative p-12 bg-[#021526] text-center w-full h-[35rem] rounded-xl shadow-lg border-2 border-lightBlue">
-          <div className="flex flex-col text-left z-10">
-            <h2 className="text-5xl font-semibold text-white">
+
+      {/* Main Content */}
+      <div className="pt-8 md:pt-12 lg:pt-16 xl:pt-20 flex flex-col items-center justify-center">
+        <div className="relative p-4 md:p-8 lg:p-10 xl:p-12 bg-[#021526] text-left w-full lg:w-full xl:w-full h-[30rem] max-sm:h-[35rem] sm:h-[35rem] md:h-[30rem] lg:h-[40rem] xl:h-[35rem] rounded-xl shadow-lg border-2 border-lightBlue overflow-hidden">
+          <div className="flex flex-col text-left z-10 px-4 md:px-6 lg:px-8 xl:px-10">
+            <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-white">
               Hello I&apos;m{" "}
             </h2>
-            <h2 className="text-5xl font-semibold text-white">
+            <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-white">
               <span className="text-lightBlue">Nikos Bosneas</span>
             </h2>
-            <p className="mt-8 text-lg text-gray-300 w-[60%]">
+            <p className="mt-2 md:mt-4 lg:mt-6 xl:mt-8 text-sm md:text-base lg:text-lg xl:text-xl text-gray-300 max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
               I&apos;m a passionate Full Stack Developer with expertise in
               building dynamic and responsive web applications from front-end to
               back-end. I love turning ideas into reality through code.
             </p>
 
             {/* Download CV Button */}
-            <div className="mt-6">
+            <div className="mt-4 md:mt-6 lg:mt-8 xl:mt-10">
               <Link href="/NikosBosneasCV.pdf" download>
-                <button className="px-6 py-3 bg-lightBlue text-white rounded-lg hover:bg-blue-600 transition-colors">
+                <button className="px-3 py-1.5 md:px-4 md:py-2 lg:px-5 lg:py-2.5 xl:px-6 xl:py-3 bg-lightBlue text-white rounded-lg hover:bg-blue-600 transition-colors">
                   Download CV
                 </button>
               </Link>
             </div>
 
-            <h3 className="mt-12 text-xl text-lightBlue">My skills</h3>
-            <div className="grid grid-cols-2 gap-4 items-center pt-4">
-              <div className="flex flex-wrap items-center justify-start">
+            <h3 className="mt-4 sm:mt-12 md:mt-8 lg:mt-8 xl:mt-10 text-base md:text-lg lg:text-xl xl:text-2xl text-lightBlue">
+              My skills
+            </h3>
+            <div className="grid grid-cols-2 gap-2 md:gap-3 lg:gap-4 items-center pt-2 md:pt-6 lg:pt-6 xl:pt-8">
+              <div className="flex flex-wrap items-center">
                 <AnimatedTooltip items={skills} />
               </div>
             </div>
           </div>
 
           {/* Red Circle Behind the Image */}
-          <div className="absolute right-16 top-1/2 transform -translate-y-1/2 w-64 h-64 bg-gray-700 rounded-full border-2 border-lightBlue z-0"></div>
+          <div className="absolute right-10 sm:right-[8%] md:right-8 lg:right-10 xl:right-[4rem] top-[49%] transform -translate-y-1/2 w-24 sm:w-28 md:w-32 lg:w-40 xl:w-56 h-24 sm:h-28 md:h-32 lg:h-40 xl:h-56 bg-gray-700 rounded-full border-2 border-lightBlue z-0"></div>
 
           <Image
             src={heroImg}
             alt="hero"
-            className="absolute right-8 top-1/2 transform -translate-y-1/2 w-80 h-80 object-cover z-10"
+            className="absolute right-6 md:right-4 lg:right-6 xl:right-8 top-1/2 transform -translate-y-1/2 w-32 sm:w-40 md:w-46 lg:w-48 xl:w-72 h-32 sm:h-40 md:h-46 lg:h-48 xl:h-72 object-cover z-10"
           />
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center justify-center mt-12">
+      {/* Projects Section Link */}
+      <div className="flex flex-wrap items-center justify-center mt-6 md:mt-8 lg:mt-12 xl:mt-16">
         <Link href="#projects">
-          <div className="relative flex flex-col items-center justify-center w-28 h-28 cursor-pointer">
+          <div className="relative flex flex-col items-center justify-center w-16 max-sm:w-28 sm:w-28 md:w-28 lg:w-28 xl:w-28 h-16 max-sm:h-28 sm:h-28 md:h-28 lg:h-28 xl:h-28 cursor-pointer">
             <motion.div
               className="absolute border-2 border-dashed border-white rounded-full w-full h-full flex items-center justify-center"
               animate={{ rotate: 360 }}
@@ -114,7 +120,7 @@ const Hero = () => {
                 repeatType: "loop",
               }}
             />
-            <div className="text-lg flex items-center justify-center w-full h-1/3 text-lightBlue">
+            <div className="text-xs max-sm:text-sm sm:text-lg md:text-lg lg:text-base xl:text-lg flex items-center justify-center w-full h-1/3 text-lightBlue">
               Projects
             </div>
             {/* Animated Down Arrow Icon */}
@@ -125,9 +131,9 @@ const Hero = () => {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="mt-2"
+              className="mt-1 md:mt-2 lg:mt-3 xl:mt-4"
             >
-              <FaArrowDown className="text-2xl text-lightBlue" />
+              <FaArrowDown className="text-md max-sm:text-xl sm:text-xl md:text-xl lg:text-xl xl:text-2xl text-lightBlue" />
             </motion.div>
           </div>
         </Link>
