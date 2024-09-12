@@ -35,7 +35,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-screen overflow-hidden max-sm:mt-6 sm:mt-6">
       {/* Header */}
       <div className="pt-8 flex items-center justify-between">
         <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
@@ -62,9 +62,9 @@ const Hero = () => {
       </div>
 
       {/* Main Content */}
-      <div className="pt-8 md:pt-12 lg:pt-16 xl:pt-20 flex flex-col items-center justify-center">
-        <div className="relative p-4 md:p-8 lg:p-10 xl:p-12 bg-[#021526] text-left w-full lg:w-full xl:w-full h-[30rem] max-sm:h-[35rem] sm:h-[35rem] md:h-[30rem] lg:h-[40rem] xl:h-[35rem] rounded-xl shadow-lg border-2 border-lightBlue overflow-hidden">
-          <div className="flex flex-col text-left z-10 px-4 md:px-6 lg:px-8 xl:px-10">
+      <div className="pt-8 md:pt-12 lg:pt-16 xl:pt-20 flex flex-col max-sm:items-center max-sm:justify-center sm:items-center sm:justify-center">
+        <div className="relative p-4 md:p-8 lg:p-10 xl:p-12 bg-[#021526] text-left w-full lg:w-full xl:w-full h-[30rem] max-sm:h-[30rem] sm:h-[30rem] md:h-[30rem] lg:h-[30rem] xl:h-[35rem] rounded-xl shadow-lg border-2 border-lightBlue overflow-hidden flex flex-col sm:flex-row items-center sm:items-start">
+          <div className="flex flex-col text-center sm:text-left z-10 px-4 md:px-6 lg:px-8 xl:px-10">
             <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-white">
               Hello I&apos;m{" "}
             </h2>
@@ -89,25 +89,25 @@ const Hero = () => {
             <h3 className="mt-4 sm:mt-12 md:mt-8 lg:mt-8 xl:mt-10 text-base md:text-lg lg:text-xl xl:text-2xl text-lightBlue">
               My skills
             </h3>
-            <div className="grid grid-cols-2 gap-2 md:gap-3 lg:gap-4 items-center pt-2 md:pt-6 lg:pt-6 xl:pt-8">
-              <div className="flex flex-wrap items-center">
-                <AnimatedTooltip items={skills} />
-              </div>
+
+            <div className="flex flex-wrap items-center max-sm:justify-center  mt-4 ">
+              <AnimatedTooltip items={skills} />
             </div>
           </div>
 
-          <div className="absolute right-10 sm:right-[8%] md:right-8 lg:right-[4rem] xl:right-[4rem] top-[49%] sm:top-[55%] max-sm:top-[55%] transform -translate-y-1/2 w-24 sm:w-28 md:w-32 lg:w-48 xl:w-56 h-24 sm:h-28 md:h-32 lg:h-48 xl:h-56 bg-gray-700 rounded-full border-2 border-lightBlue z-0" />
+          {/* Circle and Image (hidden on small screens) */}
+          <div className="absolute right-10 sm:right-[8%] md:right-8 lg:right-[4rem] xl:right-[4rem] top-[49%] sm:top-[55%] max-sm:top-[55%] transform -translate-y-1/2 w-24 sm:w-28 md:w-32 lg:w-48 xl:w-56 h-24 sm:h-28 md:h-32 lg:h-48 xl:h-56 bg-gray-700 rounded-full border-2 border-lightBlue z-0 hidden sm:block" />
 
           <Image
             src={heroImg}
             alt="hero"
-            className="absolute right-6 md:right-4 lg:right-20 xl:right-8 top-1/2 sm:top-[55%] max-sm:top-[55%] transform -translate-y-1/2 w-32 sm:w-40 md:w-46 lg:w-58 xl:w-72 h-32 sm:h-40 md:h-46 lg:h-60 xl:h-72 object-cover z-10"
+            className="absolute right-6 md:right-4 lg:right-20 xl:right-8 top-1/2 sm:top-[55%] max-sm:top-[55%] transform -translate-y-1/2 w-32 sm:w-40 md:w-46 lg:w-58 xl:w-72 h-32 sm:h-40 md:h-46 lg:h-60 xl:h-72 object-cover z-10 hidden sm:block"
           />
         </div>
       </div>
 
       {/* Projects Section Link */}
-      <div className="flex flex-wrap items-center justify-center max-sm:mb-10 sm:mb-10 mt-6 md:mt-8 lg:mt-12 xl:mt-16">
+      <div className="flex flex-wrap items-center justify-center max-sm:mb-10 sm:mb-10 md:mb-10 mt-6 md:mt-8 lg:mt-12 xl:mt-16">
         <Link href="#projects">
           <div className="relative flex flex-col items-center justify-center w-16 max-sm:w-28 sm:w-28 md:w-28 lg:w-28 xl:w-32 h-16 max-sm:h-28 sm:h-28 md:h-28 lg:h-28 xl:h-32 cursor-pointer">
             <motion.div
