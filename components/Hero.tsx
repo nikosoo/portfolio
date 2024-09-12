@@ -107,7 +107,7 @@ const Hero = () => {
       </div>
 
       {/* Projects Section Link */}
-      <div className="flex flex-wrap items-center justify-center mt-6 md:mt-8 lg:mt-12 xl:mt-16">
+      <div className="flex flex-wrap items-center justify-center max-sm:mb-10 sm:mb-10 mt-6 md:mt-8 lg:mt-12 xl:mt-16">
         <Link href="#projects">
           <div className="relative flex flex-col items-center justify-center w-16 max-sm:w-28 sm:w-28 md:w-28 lg:w-28 xl:w-32 h-16 max-sm:h-28 sm:h-28 md:h-28 lg:h-28 xl:h-32 cursor-pointer">
             <motion.div
