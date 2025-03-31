@@ -2,6 +2,7 @@ import Taste from "../public/TasteHaven.png";
 import Connectify from "../public/Connectify.png";
 import WPproj1 from "../public/WPproj1.png";
 import WPproj2 from "../public/WPproj2.png";
+import WPproj3 from "../public/project2.png";
 
 export const projects = [
   {
@@ -26,9 +27,16 @@ export const projects = [
     url: "https://johnspiridisphotography.gr",
   },
   {
-    title: "Champions Choice",
+    title: "New Design",
     description: "WordPress",
     id: 4,
+    img: WPproj3,
+    url: "https://newdesign.gr", // Add your URL here
+  },
+  {
+    title: "Champions Choice",
+    description: "WordPress",
+    id: 5,
     img: WPproj2,
     url: "https://nikos000.gr", // Add your URL here
   },
