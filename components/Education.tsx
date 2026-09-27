@@ -33,7 +33,7 @@ const Education = () => {
               specialization bridges the skills gap by providing comprehensive
               IT knowledge to professionals from various fields, enabling them
               to effectively meet technological and professional challenges in
-              today's market demands.
+              today&apos;s market demands.
             </p>
           </div>
         </WobbleCard>
