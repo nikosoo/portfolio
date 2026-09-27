@@ -4,13 +4,13 @@ import WPproj1 from "../public/WPproj1.png";
 import WPproj2 from "../public/WPproj2.png";
 import WPproj3 from "../public/project2.png";
 import MobileApp from "../public/horecAppImage.png"
-import MobileApp2 from "../public/moneyfestmanager.png";
+import MobileApp2 from "../public/MoneyfestManager.png";
 import hotelPontos from "../public/hotelPontos.png";
 import ParkingScanner from "../public/parkingscanner.png";
 import Expires from "../public/expires.png";
 import Ergani from "../public/ergani.png";
 import rentacar from "../public/rentacar.png";
-import delivery from "../public/delivery.png";
+import delivery from "../public/Delivery.png";
 
 export const projects = [
   {
